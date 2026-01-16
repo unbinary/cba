@@ -137,8 +137,8 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold text-[var(--foreground)]">Join the Movement</h2>
           <p className="mt-4 text-[var(--muted)] max-w-xl mx-auto">
-            Help us hold Canadian broadcasters accountable. Sign our petition, join our email
-            list, or contact us to get involved.
+            Help us hold Canadian broadcasters accountable. Join our email list, file a complaint,
+            or contact us to get involved.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/take-action" variant="accent" size="lg">

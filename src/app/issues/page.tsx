@@ -4,18 +4,10 @@ import { Button } from '@/components';
 
 export const metadata: Metadata = {
   title: 'Issues',
-  description: 'Learn about the broadcasting accountability issues CBA is working on, including pay audio bundling, tangible benefits compliance, and Canadian content obligations.',
+  description: 'Learn about the broadcasting accountability issues CBA is working on, including tangible benefits compliance and Canadian content obligations.',
 };
 
 const issues = [
-  {
-    title: 'Pay Audio Bundling',
-    description:
-      'Millions of Canadians pay for Stingray Music through their cable bill - whether they use it or not. We\'re asking the CRTC to give consumers a real choice.',
-    href: '/issues/pay-audio',
-    status: 'Active Campaign',
-    statusColor: 'bg-green-100 text-green-800',
-  },
   {
     title: 'Tangible Benefits Compliance',
     description:

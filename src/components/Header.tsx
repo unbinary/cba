@@ -1,16 +1,28 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
+import { useAuth } from '@/context/AuthContext';
 
-const navigation = [
+interface NavChild {
+  name: string;
+  href: string;
+  protected?: boolean;
+}
+
+interface NavItem {
+  name: string;
+  href: string;
+  children?: NavChild[];
+}
+
+const navigation: NavItem[] = [
   { name: 'About', href: '/about' },
   {
     name: 'Issues',
     href: '/issues',
     children: [
-      { name: 'Pay Audio Bundling', href: '/issues/pay-audio' },
+      { name: 'Pay Audio Bundling', href: '/issues/pay-audio', protected: true },
       { name: 'All Issues', href: '/issues' },
     ],
   },
@@ -28,6 +40,7 @@ const navigation = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const { isAuthenticated } = useAuth();
 
   return (
     <header className="bg-white border-b border-[var(--border)] sticky top-0 z-50">
@@ -35,15 +48,8 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center">
-              <Image
-                src="/logo.jpg"
-                alt="Canadians for Broadcast Accountability"
-                width={180}
-                height={48}
-                className="h-10 w-auto"
-                priority
-              />
+            <Link href="/" className="text-lg font-semibold text-[var(--foreground)] hover:text-[var(--primary)]">
+              Canadians for Broadcast Accountability
             </Link>
           </div>
 
@@ -67,15 +73,17 @@ export default function Header() {
                     </button>
                     {openDropdown === item.name && (
                       <div className="absolute left-0 mt-0 w-56 bg-white border border-[var(--border)] rounded-md shadow-lg py-1">
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.name}
-                            href={child.href}
-                            className="block px-4 py-2 text-sm text-[var(--foreground)] hover:bg-gray-50 hover:text-[var(--primary)]"
-                          >
-                            {child.name}
-                          </Link>
-                        ))}
+                        {item.children
+                          .filter((child) => !child.protected || isAuthenticated)
+                          .map((child) => (
+                            <Link
+                              key={child.name}
+                              href={child.href}
+                              className="block px-4 py-2 text-sm text-[var(--foreground)] hover:bg-gray-50 hover:text-[var(--primary)]"
+                            >
+                              {child.name}
+                            </Link>
+                          ))}
                       </div>
                     )}
                   </div>
@@ -130,16 +138,18 @@ export default function Header() {
                       <span className="block px-3 py-2 text-sm font-medium text-[var(--muted)]">
                         {item.name}
                       </span>
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.name}
-                          href={child.href}
-                          className="block pl-6 pr-3 py-2 text-sm text-[var(--foreground)] hover:bg-gray-50"
-                          onClick={() => setMobileMenuOpen(false)}
-                        >
-                          {child.name}
-                        </Link>
-                      ))}
+                      {item.children
+                        .filter((child) => !child.protected || isAuthenticated)
+                        .map((child) => (
+                          <Link
+                            key={child.name}
+                            href={child.href}
+                            className="block pl-6 pr-3 py-2 text-sm text-[var(--foreground)] hover:bg-gray-50"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {child.name}
+                          </Link>
+                        ))}
                     </>
                   ) : (
                     <Link

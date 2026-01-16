@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 const footerLinks = {
   issues: [
-    { name: 'Pay Audio Bundling', href: '/issues/pay-audio' },
     { name: 'All Issues', href: '/issues' },
   ],
   resources: [

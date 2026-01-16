@@ -18,8 +18,8 @@ export default function Home() {
               <Button href="/take-action" variant="accent" size="lg">
                 Take Action
               </Button>
-              <Button href="/issues/pay-audio" variant="secondary" size="lg" className="border-white text-white hover:bg-white/10">
-                Learn About Pay Audio
+              <Button href="/about" variant="outline" size="lg">
+                Learn More
               </Button>
             </div>
           </div>
@@ -89,24 +89,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Current Campaign Section */}
+      {/* Get Involved Section */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="bg-[var(--primary)] rounded-2xl p-8 md:p-12 text-white">
             <div className="md:flex md:items-center md:justify-between">
               <div className="max-w-2xl">
                 <span className="text-sm font-semibold uppercase tracking-wider text-gray-300">
-                  Current Campaign
+                  Get Involved
                 </span>
-                <h2 className="mt-2 text-3xl font-bold">Stop Forced Pay Audio Bundling</h2>
+                <h2 className="mt-2 text-3xl font-bold">Your Voice Matters</h2>
                 <p className="mt-4 text-gray-200">
-                  Millions of Canadians pay for Stingray Music through their cable bill - 
-                  whether they use it or not. We&apos;re asking the CRTC to give consumers a real choice.
+                  Learn how to file complaints, intervene in CRTC proceedings, and help
+                  hold broadcasters accountable to their commitments.
                 </p>
               </div>
               <div className="mt-6 md:mt-0 md:ml-8">
-                <Button href="/issues/pay-audio" variant="accent" size="lg">
-                  Learn More
+                <Button href="/take-action" variant="accent" size="lg">
+                  Take Action
                 </Button>
               </div>
             </div>

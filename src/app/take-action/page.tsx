@@ -4,7 +4,7 @@ import { Button, EmailSignup } from '@/components';
 
 export const metadata: Metadata = {
   title: 'Take Action',
-  description: 'Join Canadians demanding accountability from broadcasters. Sign petitions, contact the CRTC, and make your voice heard.',
+  description: 'Join Canadians demanding accountability from broadcasters. Contact the CRTC, intervene in hearings, and make your voice heard.',
 };
 
 export default function TakeActionPage() {
@@ -22,23 +22,23 @@ export default function TakeActionPage() {
         </div>
       </section>
 
-      {/* Current Campaign */}
+      {/* Make a Difference */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
-              Current Campaign
+              Make a Difference
             </span>
             <h2 className="mt-2 text-3xl font-bold text-[var(--foreground)]">
-              Stop Forced Pay Audio Bundling
+              Hold Broadcasters Accountable
             </h2>
             <p className="mt-4 text-lg text-[var(--muted)]">
-              Millions of Canadians pay for Stingray Music through their cable bill - whether
-              they use it or not. We&apos;re asking the CRTC to give consumers a real choice.
+              Canadian broadcasters operate on public airwaves and make promises to the CRTC
+              in exchange for their licences. We help ensure those promises are kept.
             </p>
             <div className="mt-6">
-              <Button href="/issues/pay-audio#petition" variant="accent" size="lg">
-                Sign the Petition
+              <Button href="/resources/how-to-complain" variant="accent" size="lg">
+                Learn How to File a Complaint
               </Button>
             </div>
           </div>
@@ -109,15 +109,15 @@ export default function TakeActionPage() {
                 Spread the Word
               </h3>
               <p className="mt-2 text-[var(--muted)]">
-                Share our petition with friends and family. The more Canadians who speak up,
+                Share our work with friends and family. The more Canadians who speak up,
                 the harder it is for regulators to ignore us.
               </p>
               <div className="mt-4">
                 <Link
-                  href="/issues/pay-audio"
+                  href="/about"
                   className="text-[var(--primary)] font-medium hover:underline"
                 >
-                  Get shareable link &rarr;
+                  Learn about our mission &rarr;
                 </Link>
               </div>
             </div>

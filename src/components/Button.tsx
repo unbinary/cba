@@ -3,7 +3,7 @@ import Link from 'next/link';
 interface ButtonProps {
   children: React.ReactNode;
   href?: string;
-  variant?: 'primary' | 'secondary' | 'accent';
+  variant?: 'primary' | 'secondary' | 'accent' | 'outline';
   size?: 'sm' | 'md' | 'lg';
   type?: 'button' | 'submit';
   disabled?: boolean;
@@ -15,6 +15,7 @@ const variants = {
   primary: 'bg-[var(--primary)] hover:bg-[var(--primary-dark)] text-white',
   secondary: 'bg-white border border-[var(--primary)] text-[var(--primary)] hover:bg-gray-50',
   accent: 'bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-white',
+  outline: 'bg-transparent border border-white text-white hover:bg-white/10',
 };
 
 const sizes = {
