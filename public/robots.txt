@@ -1,0 +1,10 @@
+# Robots.txt for cba-tv.ca
+User-agent: *
+Allow: /
+
+# Disallow protected/private pages
+Disallow: /login
+Disallow: /issues/pay-audio
+
+# Sitemap location
+Sitemap: https://cba-tv.ca/sitemap.xml
