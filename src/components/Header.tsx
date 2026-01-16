@@ -103,6 +103,14 @@ export default function Header() {
             >
               Take Action
             </Link>
+            {!isAuthenticated && (
+              <Link
+                href="/login"
+                className="ml-2 px-3 py-2 text-sm text-[var(--muted)] hover:text-[var(--foreground)]"
+              >
+                Login
+              </Link>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -169,6 +177,15 @@ export default function Header() {
               >
                 Take Action
               </Link>
+              {!isAuthenticated && (
+                <Link
+                  href="/login"
+                  className="block mx-3 mt-2 px-4 py-2 text-sm text-center text-[var(--muted)] hover:text-[var(--foreground)]"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Login
+                </Link>
+              )}
             </div>
           </div>
         )}
