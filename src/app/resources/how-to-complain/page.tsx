@@ -87,7 +87,7 @@ const howToSchema = {
       '@type': 'HowToStep',
       name: 'File Your Complaint Online',
       text: 'Go to the CRTC online complaint form at applications.crtc.gc.ca. Select the type of complaint and provide details about your issue.',
-      url: 'https://applications.crtc.gc.ca/RapidCCM/en/Support',
+      url: 'https://crtc.gc.ca/eng/contact/question.htm',
     },
     {
       '@type': 'HowToStep',
@@ -172,7 +172,7 @@ export default function HowToComplainPage() {
                   </ul>
                   <div className="mt-3">
                     <a
-                      href="https://applications.crtc.gc.ca/RapidCCM/en/Support"
+                      href="https://crtc.gc.ca/eng/contact/question.htm"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[var(--primary)] font-medium hover:underline"
@@ -353,7 +353,7 @@ export default function HowToComplainPage() {
                     </p>
                     <div className="mt-4">
                       <a
-                        href="https://applications.crtc.gc.ca/RapidCCM/en/Support"
+                        href="https://crtc.gc.ca/eng/contact/question.htm"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-[var(--primary)] font-medium hover:underline"
@@ -601,7 +601,7 @@ export default function HowToComplainPage() {
             {/* CTA */}
             <div className="mt-12 flex flex-col sm:flex-row gap-4">
               <Button
-                href="https://applications.crtc.gc.ca/RapidCCM/en/Support"
+                href="https://crtc.gc.ca/eng/contact/question.htm"
                 variant="primary"
                 size="lg"
               >

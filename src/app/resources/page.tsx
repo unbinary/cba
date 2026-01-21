@@ -164,7 +164,7 @@ export default function ResourcesPage() {
                   </p>
                 </a>
                 <a
-                  href="https://applications.crtc.gc.ca/RapidCCM/en/Support"
+                  href="https://crtc.gc.ca/eng/contact/question.htm"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block p-4 bg-gray-50 border border-[var(--border)] rounded-lg hover:border-[var(--primary)]/50"
