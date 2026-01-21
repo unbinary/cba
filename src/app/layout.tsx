@@ -70,6 +70,14 @@ const organizationSchema = {
   sameAs: [],
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Canadians for Broadcast Accountability",
+  alternateName: ["CBA", "Canadians for Broadcast Accountability"],
+  url: "https://cba-tv.ca",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -93,6 +101,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
