@@ -191,19 +191,24 @@ export default function HowToComplainPage() {
                   </p>
                   <ul className="mt-2 text-[var(--muted)] list-disc pl-5 space-y-1">
                     <li>Billing disputes and incorrect charges</li>
+                    <li><strong>Unwanted services you can&apos;t remove from your bill</strong></li>
                     <li>Contract issues and cancellation problems</li>
                     <li>Service quality problems</li>
                     <li>Equipment issues</li>
                     <li>Credit and collection disputes</li>
                   </ul>
+                  <p className="mt-3 text-sm text-[var(--muted)] bg-gray-50 p-3 rounded">
+                    <strong>Tip:</strong> If you&apos;ve asked your provider to remove a service from your bill
+                    and they refused, the CCTS is the right place to escalate. See our detailed CCTS guide below.
+                  </p>
                   <div className="mt-3">
                     <a
-                      href="https://www.ccts-cprst.ca/"
+                      href="https://www.ccts-cprst.ca/for-consumers/complaints/complaint-form/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[var(--primary)] font-medium hover:underline"
                     >
-                      CCTS Website
+                      CCTS Complaint Form
                     </a>
                   </div>
                 </div>
@@ -403,6 +408,74 @@ export default function HowToComplainPage() {
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* CCTS Detailed Guide */}
+            <div className="mt-12 p-6 bg-blue-50 rounded-lg border border-blue-200">
+              <h2 className="text-2xl font-bold text-[var(--foreground)]">
+                Filing a CCTS Complaint About Unwanted Services
+              </h2>
+              <p className="mt-4 text-[var(--muted)]">
+                If you&apos;re being charged for services you never requested and your provider
+                refuses to remove them, the CCTS can help. Here&apos;s how to file an effective complaint:
+              </p>
+
+              <h3 className="mt-6 font-semibold text-lg text-[var(--foreground)]">
+                Before You File
+              </h3>
+              <ul className="mt-2 text-[var(--muted)] list-disc pl-5 space-y-2">
+                <li>Contact your provider first and ask to have the service removed</li>
+                <li>Document the date, time, and name of the representative</li>
+                <li>Note exactly what they told you (e.g., &quot;it&apos;s mandatory&quot; or &quot;it can&apos;t be removed&quot;)</li>
+                <li>Keep copies of your bills showing the charges</li>
+              </ul>
+
+              <h3 className="mt-6 font-semibold text-lg text-[var(--foreground)]">
+                What to Include in Your Complaint
+              </h3>
+              <ul className="mt-2 text-[var(--muted)] list-disc pl-5 space-y-2">
+                <li>The specific service you want removed and its monthly cost</li>
+                <li>That you never requested or agreed to this service</li>
+                <li>That you have asked your provider to remove it and they refused</li>
+                <li>What resolution you&apos;re seeking (removal of service and refund of charges)</li>
+              </ul>
+
+              <h3 className="mt-6 font-semibold text-lg text-[var(--foreground)]">
+                Sample Language
+              </h3>
+              <div className="mt-2 bg-white p-4 rounded border text-sm text-[var(--muted)]">
+                <p>
+                  &quot;I am being charged $[amount] per month for [service name] that I never requested
+                  and do not use. On [date], I contacted [provider] and spoke with [name/reference number]
+                  to request removal of this service. I was told [their response]. I am requesting that
+                  this service be removed from my account and that I receive a refund for the charges
+                  dating back to [date or &apos;the beginning of my service&apos;].&quot;
+                </p>
+              </div>
+
+              <h3 className="mt-6 font-semibold text-lg text-[var(--foreground)]">
+                What to Expect
+              </h3>
+              <ul className="mt-2 text-[var(--muted)] list-disc pl-5 space-y-2">
+                <li>CCTS will acknowledge your complaint within 1-2 business days</li>
+                <li>Your provider has 30 days to respond and try to resolve the issue</li>
+                <li>If unresolved, CCTS will investigate and may issue a recommendation or decision</li>
+                <li>The process typically takes 30-90 days depending on complexity</li>
+              </ul>
+
+              <div className="mt-6">
+                <a
+                  href="https://www.ccts-cprst.ca/for-consumers/complaints/complaint-form/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[var(--primary)] text-white px-4 py-2 rounded font-medium hover:bg-[var(--primary)]/90"
+                >
+                  File a CCTS Complaint
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </div>
             </div>
 

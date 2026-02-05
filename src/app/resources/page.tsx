@@ -12,6 +12,13 @@ export const metadata: Metadata = {
 
 const resources = [
   {
+    title: 'Consumer Choice in Broadcasting',
+    description:
+      'Understanding your rights as a cable subscriber. Learn what the CRTC promised with consumer choice regulations, how to exercise your rights, and what to do when providers refuse to remove unwanted services.',
+    href: '/resources/consumer-choice',
+    topics: ['consumer rights', 'skinny basic', 'pick and pay', 'unwanted services'],
+  },
+  {
     title: 'How to File a CRTC Complaint',
     description:
       'Complete step-by-step guide to filing a complaint with the CRTC. Learn which organization to contact (CRTC, CCTS, or CBSC), what information you need, and what to expect after filing.',
@@ -28,10 +35,6 @@ const resources = [
 ];
 
 const comingSoon = [
-  {
-    title: 'Your Rights as a TV Subscriber',
-    description: 'Understanding the TV Service Provider Code, skinny basic packages, and your consumer rights when dealing with cable and satellite providers.',
-  },
   {
     title: 'Broadcasting Glossary',
     description: 'Plain-language definitions of broadcasting terms like BDU, CanCon, and more.',

@@ -30,10 +30,12 @@ const navigation: NavItem[] = [
     name: 'Resources',
     href: '/resources',
     children: [
-      { name: 'How to File a CRTC Complaint', href: '/resources/how-to-complain' },
+      { name: 'Consumer Choice Guide', href: '/resources/consumer-choice' },
+      { name: 'How to File a Complaint', href: '/resources/how-to-complain' },
       { name: 'How to Intervene in Hearings', href: '/resources/how-to-intervene' },
     ],
   },
+  { name: 'Petition', href: '/petition' },
   { name: 'Contact', href: '/contact' },
 ];
 

@@ -19,6 +19,11 @@ export const metadata: Metadata = {
   },
   description: "Holding Canadian broadcasters accountable to their CRTC licence obligations. Learn how to file complaints, intervene in hearings, and advocate for consumer choice.",
   metadataBase: new URL("https://cba-tv.ca"),
+  icons: {
+    icon: "/favicon.jpg",
+    shortcut: "/favicon.jpg",
+    apple: "/favicon.jpg",
+  },
   keywords: ["CRTC", "Canadian broadcasting", "broadcast accountability", "consumer advocacy", "cable complaints", "CRTC complaints", "broadcast regulation", "Canadian content"],
   authors: [{ name: "Canadians for Broadcast Accountability" }],
   creator: "Canadians for Broadcast Accountability",

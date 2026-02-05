@@ -32,15 +32,50 @@ export default function Home() {
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold text-[var(--foreground)]">The Problem</h2>
             <p className="mt-4 text-lg text-[var(--muted)]">
-              Canadian broadcasters make promises to the CRTC in exchange for their licences - 
-              commitments to Canadian content, community benefits, and fair practices. Too often, 
+              Canadian broadcasters make promises to the CRTC in exchange for their licences -
+              commitments to Canadian content, community benefits, and fair practices. Too often,
               these promises go unfulfilled while Canadians foot the bill.
             </p>
             <p className="mt-4 text-lg text-[var(--muted)]">
-              Right now, millions of cable subscribers are paying for services they never asked for 
-              and cannot remove. The CRTC promised Canadians choice. We&apos;re here to make sure that 
+              Right now, millions of cable subscribers are paying for services they never asked for
+              and cannot remove. The CRTC promised Canadians choice. We&apos;re here to make sure that
               promise is kept.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Statistics Section */}
+      <section className="py-16 bg-[var(--primary)]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white">Canadians Want Choice</h2>
+            <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
+              When surveyed about unwanted bundled services on their cable bills, Canadians are clear:
+            </p>
+          </div>
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            <div className="bg-white/10 rounded-lg p-6">
+              <div className="text-5xl font-bold text-[var(--accent)]">81%</div>
+              <p className="mt-2 text-gray-200">wouldn&apos;t pay if given a choice</p>
+            </div>
+            <div className="bg-white/10 rounded-lg p-6">
+              <div className="text-5xl font-bold text-[var(--accent)]">61%</div>
+              <p className="mt-2 text-gray-200">have never used the service</p>
+            </div>
+            <div className="bg-white/10 rounded-lg p-6">
+              <div className="text-5xl font-bold text-[var(--accent)]">46%</div>
+              <p className="mt-2 text-gray-200">didn&apos;t know they were paying</p>
+            </div>
+            <div className="bg-white/10 rounded-lg p-6">
+              <div className="text-5xl font-bold text-[var(--accent)]">4%</div>
+              <p className="mt-2 text-gray-200">would choose it over alternatives</p>
+            </div>
+          </div>
+          <div className="mt-8 text-center">
+            <Link href="/petition" className="text-[var(--accent)] font-medium hover:underline">
+              Sign our petition for consumer choice &rarr;
+            </Link>
           </div>
         </div>
       </section>
