@@ -8,7 +8,6 @@ import FAQ from './FAQ';
 
 const stats = [
   { value: '10M+', label: 'Canadian households with Stingray Music in their cable package' },
-  { value: '~784K', label: 'People who actually chose to subscribe directly' },
   { value: '$47M+', label: 'Estimated annual Canadian pay audio revenue' },
   { value: '4%', label: 'Amount Stingray contributes to Canadian music development' },
   { value: '$0', label: 'What you save by asking to remove it (you can\'t)' },
